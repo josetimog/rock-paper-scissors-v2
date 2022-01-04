@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+    <script src='app.js' defer></script>
+    <title>Textbox Testing</title>
+</head>
+<body>
+
+    <div class='header'>
+        <h1>Rock Paper Scissors Battle!</h1>
+    </div>
+    
+
+    <div class='screen-container'>
+    
+        <!-- RIVAL AREA -->
+        <div class='rival-container'>
+
+            <div class='rival-stats'>
+                <p class ='trainer-name'>RIVAL</p>
+                <div class="rival-hp-text">
+                    <div class="hp-text">HP: </div>
+                    <div class="rival-hp-bar">
+                        <div id='rival-HP-content'></div>
+                    </div>
+                </div>                
+                <p class=hp-counter><span id='rival-HP'>5</span> / 5</p>
+            </div>
+
+            <div class='rival-img'>
+                <img src='images/rival-gray.png'>
+            </div>
+
+        </div>
+
+        <!-- PLAYER AREA -->
+        <div class='player-container'>
+            
+            <div class='player-img'>
+                <img src='images/player-gray.png'>
+            </div>
+
+            <div class='player-stats'>
+                <p class='trainer-name'>PLAYER</p>
+                <div class="player-hp-text">
+                    <div class="hp-text">HP: </div>
+                    <div class="player-hp-bar">
+                        <div id='player-HP-content'></div>
+                    </div>
+                </div>
+                <p class=hp-counter><span id='player-HP'>5</span> / 5</p>
+            </div>   
+
+        </div>
+
+        <!-- BATTLE SCREEN-->
+        <div class='battle-screen'>
+
+            <div class='text-box'>
+                <p class='text'></p>
+            </div>
+
+            <div class='new-game-box'>
+                <p class='new-game-text'>PLAY AGAIN?</p>
+                <button id='new-game'>RESTART BATTLE!</button>
+            </div>
+
+            <div class='attack-box'>
+                <div class="empty-battle-screen"></div>
+                <div class='attack-selection'>
+                    <p class='button' id='rock'>&#160&#160&#160ROCK</p>
+                    <p class='button' id='paper'>&#160&#160&#160PAPER</p>
+                    <p class='button' id='scissors'>&#160&#160&#160SCISSORS</p>
+                    <p class='button' id='noAttack'>&#160&#160&#160-</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Copyright &copy ODIN PROJECT 2022</p>
+    </footer>
+
+</body>
+</html>
